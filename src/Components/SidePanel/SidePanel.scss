@@ -1,0 +1,178 @@
+/*
+ * SidePanel css File
+*/
+
+.sidePanelWind{
+    position: fixed;
+    width: 13em;
+    background: white;
+    height: 100%;
+    z-index: 3;
+    background: #C5E0FF;
+    color: #000000d4;
+    .sidePanelMenu{
+        width: 100%;
+        box-shadow: 3px 0px #f7f7f7;
+        height: 100%;
+        ul li{
+            cursor: pointer;
+        }
+        ul{
+            padding-bottom: 6em;
+        }
+        .ChildText{
+            padding-left: 55px;
+        }
+        .sidePanel-backimg {
+            background-image: url('../../Assets/images/sideimage.jpg');
+            background-repeat: no-repeat;
+            width: 100%;
+            min-height: 7em;
+        }
+
+        .imageCircle{
+            text-align: center;
+            position: relative;
+            bottom: -28px;
+            img{
+                border-radius: 2.25rem !important;
+                max-width: 50px;
+                max-height: 50px;
+            }
+        }
+        .imageName{
+            position: relative;
+            bottom: -33px;
+            padding: 6px 0px 6px 20px;
+            text-align: left;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(19, 14, 14, 0.5));
+            color: white;
+            h6{
+                font-size: 14px;
+                margin: 0px;
+            }
+        }
+        .sidePanel-pd{
+            line-height: 2.5;
+            position: relative;
+            overflow: hidden;
+            .SubchildText{
+                padding-left: auto;
+            }
+            .parentA{
+                width: 200px;
+                display: flex;
+                color:#202020;
+                text-decoration: none;
+            }
+            .sideiconSet{
+                position: absolute;
+                left: 18px;
+                top: 15px;
+            }
+            .arrowMenu{
+                margin-left: auto;
+                margin-right: 6px;
+                svg{
+                    font-size:13px;
+                }
+            }
+            &:hover{
+                background-color: #b1dcf0;
+            }
+            .childLink{
+                display: flex;
+                color:#202020;
+                text-decoration: none;
+            }
+        }
+        .childMenu{
+            padding: 5px 10px 5px 10px;
+            background-color: #b1dcf0;
+            display: none;
+            li{
+                padding: 1px 0px 1px 45px;
+                line-height: 1.8;
+                font-size: 14px;
+                &:not(.nohover):hover{
+                    background-color: #a5d5ff;
+                }
+                &.nohover{
+                    padding-left: 0px;
+                    margin-left: 44px;
+                }
+            }
+            .activeChild{
+                background-color: #a5d5ff;
+            }
+            .subchildMenu{
+                display: none;
+                padding-bottom: 0em;
+                li{
+                    padding-left: 9px;
+                }
+                .activeSubchild{
+                    background-color: #a5d5ff;
+                }
+                .childList{
+                    margin-left: -45px;
+                    padding-left: 55px;
+                }
+            }
+            .subChildShow{
+                display: inherit !important;
+            }
+        }
+        .childShow{
+            display: inherit;
+        }
+    }
+}
+    .panelMiniz{
+        width:55px;
+        position: fixed;
+        text-align: center;
+        .minimicon{
+            display: none;
+        }
+        .imageCircle{
+            img{
+                max-width: 34px !important;
+                max-height: 34px !important;
+            }
+        }
+        
+    }
+    .custScrolTrack{
+        width: 10px;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: 0;
+    }
+    .custScrolBar{
+        height: 148px;
+        display: block;
+        background: red;
+        border-radius: 18px;
+    }
+    .moduleFlow{
+        margin-left: 13em;
+
+    }
+    .moduleFlowMin{
+        margin-left: 3em;
+    }
+    .PanelHeader {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        background: white;
+        border-bottom: 1px solid #d9d9d9ab;
+        padding: 7px 8px 7px 10px;
+        ul{
+            vertical-align: middle;
+            display: inline;
+            font-size: 11px;
+        }
+    }

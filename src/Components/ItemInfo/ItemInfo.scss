@@ -1,0 +1,90 @@
+/*
+ * Componant css File
+*/
+
+.item-modal{
+    .modal-dialog{
+        max-width: 1340px;
+    }
+}
+
+.custError {
+    color: red;
+    font-size: 11px;
+}
+
+.imgPreview{
+    margin-top: 10%;
+    
+}
+
+.imgWidth{
+    width: 150px
+}
+
+.col-width{
+    width: 80px;
+}
+
+.parent{
+    
+    &:nth-of-type(2n+1){
+        background-color: rgba(145, 214, 255, 0.31) !important;
+    }
+      
+    &:nth-child(2){
+        width: 40%;
+    }
+    &:nth-child(3){
+        width: 30%;
+    }
+    &:nth-child(4){
+        width: 22%;
+    }
+    &:nth-child(5){
+        max-width: 14%;
+        width: 5%;
+        min-width: 5%;
+    }
+}
+
+.child{
+    .table{
+        margin: 0;
+    }
+    .table td, .table th{
+        padding: .2rem;
+    }
+    .table th{
+        &:nth-child(1){
+            width: 3%;
+        }
+        &:nth-child(2){
+            width: 15%;
+        }
+        &:nth-child(3){
+            width: 10%;
+        }
+        &:nth-child(4){
+            width: 5%;
+        }
+        &:nth-child(5){
+            width: 10%;
+        }
+        &:nth-child(6){
+            width: 6%;
+        }
+        &:nth-child(7){
+            width: 10%;
+        }
+        &:nth-child(8){
+            width: 8%;
+        }
+        &:nth-child(9){
+            width: 8%;
+        }
+        &:nth-child(10){
+            width: 1%;
+        }
+    }
+}

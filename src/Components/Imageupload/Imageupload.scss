@@ -1,0 +1,79 @@
+/*
+ * Imageupload css File
+*/
+$relative: relative;
+$absolute: absolute;
+.imagePreview {
+    width: 100%;
+    height: 22em;
+    border: 2px solid #eaeaea;
+    margin-bottom: 0px;
+    position: $relative;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    // .randomText{
+    //     padding:3px;
+    // }
+}
+.txtAbsolu{
+    position: $absolute;
+}
+// .activeClassCus{
+//     padding: 3px;
+//     background: #d8f4ff;
+// }
+.imageUpload{
+    border: 1px solid #d5d5d5;
+    .customeblk{
+        padding:10px;
+        .btn-outline-primary{
+            border-radius: 0px;
+        }
+    }
+}
+.maxwidth{
+    max-width: 120px;
+}
+
+.textDraw{
+    cursor: pointer;
+}
+.windowDraw{
+    min-height: 2em;
+    text-align: center;
+}
+.pd-1{
+    padding: 0;
+}
+.sty_iconDelet{
+    font-size: 26px !important;
+    @extend .textDraw;
+}
+.iconsizes{
+    .icontop{
+        padding: 9px 4px 9px 4px;
+        cursor: pointer;
+        &:hover{
+            background-color: #9bc8f0;
+        }
+    }
+}
+.inlnBlk{
+    display: inline-block;
+    margin: 0px 4px 0px 4px;
+    span{
+        display: block;
+        height: 0px;
+        text-align: center;
+    }
+    .rangetop{
+        position: relative;
+        bottom: -17px;
+    }
+    .range-slider__tooltip{
+        display: none;
+    }
+}

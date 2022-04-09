@@ -1,0 +1,199 @@
+/*
+ * Header css File
+*/
+
+.nav-stickey {
+    position: sticky;
+    top: 0;
+    padding: 0px;
+    z-index: 4;
+}
+$height:50px;
+$relative:relative;
+.navPadd{
+    .navbar-brand{
+        height:$height;
+    }
+    .navMenu{
+        height:$height;
+    }
+}
+.iconMessg{
+    top: 4px;
+    position: $relative;
+}
+
+.navMenu{
+    display: flex;
+    width:100%;
+    .iconslide{
+        padding: 10px 8px 10px 8px;
+    }
+    a{
+        color:white;
+        &:hover{
+            background-color: #4141e140;
+        }
+    }
+    .justify-content-end {
+        padding-right: 5px;
+        color:white;
+        .iconMail{
+            top: 3px; 
+            position: $relative;
+        }
+        ul{
+            li{
+                padding: 10px 8px 10px 8px; 
+                cursor: pointer;
+                margin-right: 0.4em;
+                &:hover{
+                    background-color: #4141e140;
+                }
+            }
+        }
+    }
+    .centerbar{
+        .nav-item{
+            color: blanchedalmond;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+}
+.navMenuLogo{
+    padding: 0px 11px 0px 11px;
+    margin-right: 0rem;
+    min-width: 183px;
+    .logo-text{
+        position: relative;
+        bottom:-9px;
+        display: inline-block;
+    }
+}
+.navMenuMiniz{
+    padding: 0px 11px 0px 5px;
+    min-width: 50px;
+    .logo-text{
+        display: none;
+    }
+}
+
+.profileMenu{
+    position: absolute;
+    width: 270px;
+    right: 6px;
+    background: #3094ff;
+    top: 60px;
+    &:after{
+        position: absolute;
+        content: "";
+        border-bottom: solid 14px #978c76;
+        border-right: solid 14px transparent;
+        border-left: solid 14px transparent;
+        top: -14px;
+        right: 13px;
+        width: 0px;
+        height: 0px;
+        margin: 0 auto;
+    }
+    .profileInfo{
+        display: flex;
+        padding: 10px;
+        background: #978c76;        
+    }
+    .logoCircle{
+        border-radius: 50px;
+    }
+    .profileName{
+        padding-left: 6px;
+        word-wrap: anywhere;
+        position: relative;
+        top: 7px;
+        & h6,p{
+            margin:0px;
+        }
+    }
+    .flex-column{
+        padding-bottom: 10px;
+        a{
+            color: white !important;
+            padding: 8px 12px 8px 20px !important;
+            width: 100%;
+            &:hover{
+                background-color: #4a4aff30;
+            }
+            :hover{
+                background-color: transparent !important;
+            }
+        }
+    }
+}
+.messageMenu{
+    @extend .profileMenu;
+    background: white;
+    right: 52px;
+    width: 330px;
+    .profileInfo{
+        background-image: linear-gradient(rgba(69, 90, 140, 0.5), rgba(107, 206, 236, 0.5)),url('../../Assets/images/message.jpg');
+        background-repeat: no-repeat;
+        background-size: 789px 85px;
+        background-position: 0% 100%;
+        color: white;
+        font-weight: bold;
+    }
+    .profileName{
+        position: inherit;
+        top: 0px;
+        h6{
+            font-weight: bold;
+        }
+    }
+    &:after{
+        border-bottom:solid 14px #78d0ecb3;
+    }
+    ul{
+        background: #f2f2f2;
+        color: black;
+        li{
+            display:flex;
+            border-bottom: 1px solid #e1e1e1;
+            &:hover{
+                background-color: #C3E0FF !important;
+            }
+            .icons{
+                width: 50px;
+                display: inline-block;
+                height: 50px;
+                vertical-align: middle;
+                border-radius: 50px;
+                background: #70afffde;
+                margin: auto;
+                span{
+                    text-align: center;
+                    justify-content: center;
+                    display: flex;
+                }
+            }
+            .iconContent{
+                width: 82%;
+                display: table-cell;
+                padding-left: 8px;
+                &>p{
+                    margin: 0px;
+                    font-size: 12px;
+                }
+                &>h6{
+                    margin: 0px;
+                }
+            }
+        }
+        .noBorder{
+            border: none;
+            justify-content: center;
+        }
+    }
+}
+.imgRound{
+    border-radius: 50px;
+}

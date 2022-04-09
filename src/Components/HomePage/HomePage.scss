@@ -1,0 +1,174 @@
+/*
+ * Dashboard css File
+*/
+
+.windowPanel{
+    min-height: 33em;
+    .windowHead{
+        width: 100%;
+        background: #bce0ff;
+    }
+        .ViewTable{
+        margin-top: 16px;
+    }
+}
+.text-danger{
+    padding-left: 0 !important;
+}
+.modal-header{
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    background: #91d6ff;
+    #modalTitle{
+        font-size: 18px;
+    }
+    > button{
+        padding: 0px;
+    }
+}
+.showModal{
+    display:block;
+}
+.textMrg{
+    margin-top: 0px !important;
+}
+.checkBox{
+    margin: 0px 0px 14px 0px;
+}
+.hideDate, .hideRelatedPost{
+    display: none;
+}
+.textcap{
+    text-align: left;
+    width: 94%;
+}
+.felxDiv{
+    display: flex;
+}
+.rmpadding{
+    padding: 0px !important;
+}
+.text-danger{
+    padding-left: 0px;
+}
+.rowpadd_btm{
+    padding-bottom: 12px;
+}
+.actioncol{
+    display: flex;
+}
+.blocksize{
+    display: block !important;
+    max-width: 110px;
+}
+.custom-header-style{
+    background-color: #C5E0FF;
+    tr th{
+        color: black;
+        font-weight: 600;
+    }
+}
+.mrgnone{
+    margin:0px;
+}
+.reatmaterial{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #8e8686;
+}
+.wrapperClassName{
+    border: 1px solid #d9d9d9;
+    margin-bottom: 12px;
+}
+@mixin fullWidth {
+    width:100%;
+}
+.react-datepicker-wrapper{
+    @include fullWidth;
+    .react-datepicker__input-container{
+        input{
+            @include fullWidth;
+        }
+    }
+}
+.fileborder{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 108px;
+    img{
+        width: 70%;
+        height: 100%;
+        border: 3px solid #bdbdbd8a;
+    }
+}
+.htmlsourcecss{
+    width: 100%;
+    height: auto;
+    min-height: 9em;
+    border: 2px solid #e1dededb;
+    position: relative;
+    top: -13px;
+    border-top: none;
+    resize: none;
+}
+.hideTextCont{
+    display: none;
+}
+.custdropdwn{
+    z-index: 5;
+    text-align: left;
+    .css-1uccc91-singleValue{
+        top: 41%;
+    }
+    .css-1wa3eu0-placeholder{
+        top: 38%;
+    }
+}
+.pointerr{
+    z-index: 3;
+}
+.react-datepicker-popper{
+    z-index: 4 !important;
+}
+.checktop{
+    padding-top: 30px;
+}
+.countryParent{
+    display: inline-flex;
+    width: 100%;
+    border: 3px solid #dbdbdb;
+    height: auto;
+    padding: 6px;
+    flex-flow: wrap;
+    .countryFlag{
+        width: 72px;
+        padding: 4px;
+        height: 26px;
+        cursor: pointer;
+        margin: 0px 6px 8px 0px;
+        display: inline-flex;
+        border: 1px solid #bbbbbb7d;
+        .flagName{
+            width: 25px;
+            font-size: 12px;
+            margin-left: 5px;
+            margin-top: -2px;
+        }
+        img{
+            box-shadow: 1px 1px 1px 1px #ddd;
+            width: 32px;
+            height: 15px;
+            vertical-align: revert;
+        }
+    }
+    .activeFlag{
+        box-shadow: 1px 1px 1px 1px #959595;
+        background-color: #dae2fb;
+    }
+}
+.mrgTop{
+    margin-top: 10px;
+}

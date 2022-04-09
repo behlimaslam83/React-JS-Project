@@ -1,0 +1,35 @@
+/*
+ * Componant css File
+*/
+
+.custError {
+    color: red;
+    font-size: 11px;
+}
+
+.imgPreview{
+    margin-top: 10%;
+    
+}
+ .ck-editor__editable_inline {
+    min-height: 200px;
+}
+.custom-file-label{
+    z-index: 0;
+}
+
+.rdw-editor-wrapper{
+    border: 1px solid #eae7e7;
+}
+
+.form-control.is-valid, .was-validated .form-control:valid, 
+.form-control.is-invalid, .was-validated .form-control:invalid{
+    background-image: none;
+}
+.info_del_icon {
+	color: red;
+	position: absolute;
+	top: 10px;
+	left: 77%;
+    cursor: pointer;
+}

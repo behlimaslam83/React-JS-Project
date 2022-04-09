@@ -1,0 +1,124 @@
+html, body, #root{
+  height: 100%;
+  
+  .master-container{
+    background-color: #cacaca7a;
+    padding: 0px !important;
+    position: relative;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',monospace;
+}
+.inline-css{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 8px;
+}
+.rm-Mrg{
+  margin: 0px;
+}
+.windowHead{
+  border-bottom: 2px solid #f2f2f2;
+  position: relative;
+  ul li{
+    cursor: pointer;
+    position: absolute;
+    right: 18px;
+    top: 5px;
+  }
+}
+.linkcss{
+  color:#2d2424;
+  &:hover{
+    text-decoration: none;
+    color:inherit;
+  }
+}
+.windowContent{
+  padding:10px;  
+}
+.dropdown{
+  #dropdown-basic-button{
+    padding: 2px 8px 2px 8px;
+  }
+  .dropdown-menu{
+    font-size: 13px;
+    min-width: 120px;
+  }
+}
+.childRow2 {
+  background: #daf7ff;
+}
+.childRow3 {
+  background: #cfdbe6;
+}
+.childRow4 {
+  background: #90b0fb;
+}
+.child2Column{
+  padding-left: 1.5em !important;
+}
+.child3Column{
+  padding-left: 2.1em !important;
+}
+.child4Column{
+  padding-left: 2.8em !important;
+}
+.custdropdwn{
+    z-index: 1;
+}
+
+  $lite:  #FFF;
+  $size: 40px;
+  $base: #263238;
+  .loaderBackground{
+      background-color: rgba(0,0,0,0.7);
+      height: 100%;
+      overflow:auto;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: 9999;
+      .loaderText{
+          font-size: $size;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bold;
+          color: $base;
+          text-shadow: 0 0 2px $lite, 0 0 1px $lite, 0 0 1px $lite;
+          letter-spacing: 2px;
+          position: fixed;
+          top: 45%;
+          left: 45%;
+          &::after {
+              content: 'Loading...';
+              position: absolute;
+              left: 0;
+              top: 0;
+              color: $lite;
+              width: 100%;
+              height: 120%;
+              overflow: hidden;
+              animation: animloader111 2s linear infinite;
+          }
+      }
+  
+      @keyframes animloader111 {
+          0%  { width: 0% }
+          100%  { width: 100% }
+      }
+  }
+

@@ -1,0 +1,78 @@
+/*
+ * Responsiblity css File
+*/
+
+.full-width {
+    .modal-dialog{
+        max-width: 96%;
+    }
+}
+.flexDiv{
+    display: flex;
+    .lineColor{
+        padding: 6px;
+        border: 1px solid #d7d7d7;
+        border-radius: 4px;
+        margin-bottom: 6px;
+    }
+    .marginHight{
+        margin-bottom: 12px;
+    }
+    .btnMarg{
+        margin-top: 30px;
+    }
+}
+    .treeForm{
+        display: block;
+        .parentul{
+            padding: 0px;
+            .childul{
+                padding-left: 18px;
+                .subul{
+                    padding-left: 18px;
+                }
+            }
+        }
+        ul{
+            li{
+                list-style-type: none;
+                span{
+                    display: flex;
+                }
+            }
+        }
+    }
+    .scrollTable{
+        width: 65em;
+        display: block;
+        table{
+            tbody{
+                tr{
+                    td:nth-child(1) input{
+                        width: 10em;
+                    }
+                    td:nth-child(10) input{
+                        width: 8em;
+                    }
+                    td:nth-child(11) input{
+                        width: 8em;
+                    }
+                    td:nth-child(12) input{
+                        width: 10em;
+                    }
+                    td:nth-child(13) input{
+                        width: 10em;
+                    }
+                }
+            }
+        }
+        .table-responsive{
+            max-height: 42em;
+        }
+        .switchzindx{
+            z-index: 0;
+        }
+    }
+    .datesize{
+        width: 116px;
+    }

@@ -1,0 +1,25 @@
+/*
+ * PageInfo css File
+*/
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+.flexgrp{
+    display: flex;
+    .form-check{
+        width: 50%;
+    }
+}
+
+.xyz,.xyz label,.xyz input{
+    text-align: center;
+}
+.xyz .title_label{
+    margin-top:35px;
+}
+.text_postion {
+	text-decoration: underline;
+	font-weight: 600;
+    padding-top: 15px;
+}

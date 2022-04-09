@@ -1,0 +1,16 @@
+/*
+ * Componant css File
+*/
+.custError {
+  color: red;
+  font-size: 11px;
+}
+
+.imgPreview {
+  margin-top: 10%;
+}
+
+.ck-editor__editable_inline {
+  min-height: 200px;
+}
+/*# sourceMappingURL=ProductInfo.css.map */
